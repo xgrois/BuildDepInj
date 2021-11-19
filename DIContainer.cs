@@ -36,7 +36,7 @@ namespace BuildDepInj
             }
 
 
-            // The service was registered as singleton, so we return the unique instance created during the registration itself
+            // The service was registered as singleton, so we return the unique instance of it
             else if (descriptor.Lifetime == ServiceLifetime.Singleton)
             {
                 if (descriptor.Obj is null)
